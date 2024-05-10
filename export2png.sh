@@ -14,8 +14,8 @@ do
   entry_name=${entry%.svg}
   entry_name=$(basename "${entry_name}")
   # echo "$entry_name"
-  $inkscape --export-type="png" "$entry" --export-filename="${export_dir}/${entry_name}.png" --export-dpi="4.5"
-  $inkscape --export-type="png" "$entry" --export-filename="${export_dir}/${entry_name}_2x.png" --export-dpi="9"
-  $inkscape --export-type="png" "$entry" --export-filename="${export_dir}/${entry_name}_3x.png" --export-dpi="13.5"
-  $inkscape --export-type="png" "$entry" --export-filename="${export_dir}/${entry_name}_4x.png" --export-dpi="18"
+  $inkscape --export-type="png" "$entry" --export-filename="${export_dir}/${entry_name}.png" --export-dpi="3"
+  $inkscape --export-type="png" "$entry" --export-filename="${export_dir}/${entry_name}_2x.png" --export-dpi="6"
+  $inkscape --export-type="png" "$entry" --export-filename="${export_dir}/${entry_name}_3x.png" --export-dpi="9"
+  $inkscape --export-type="png" "$entry" --export-filename="${export_dir}/${entry_name}_4x.png" --export-dpi="12"
 done
